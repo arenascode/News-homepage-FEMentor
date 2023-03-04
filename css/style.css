@@ -151,4 +151,5 @@ html, body {
 }
 .text-subsect3 h3 a:hover {
   color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
