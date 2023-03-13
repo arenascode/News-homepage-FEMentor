@@ -39,8 +39,8 @@ html, body {
   width: 35px;
   height: 25px;
 }
-.menuNavbar {
-  /* display: none; */
+#menuDesktop {
+  display: none;
 }
 
 .menuResponsive {
@@ -200,4 +200,31 @@ html, body {
 .text-subsect3 h3 a:hover {
   color: hsl(5, 85%, 63%);
   cursor: pointer;
+}
+
+@media (min-width: 1440px){
+
+
+.menuNavbar {
+  display: flex;
+}
+.menuResponsive {
+  display: none;
+}
+#menuDesktop {
+  margin-left: 10px;
+  align-self: center;
+  padding: 10px;
+  display: flex;
+  column-gap: 50px;
+}
+.linkItemNav {
+  color: hsl(236, 13%, 42%);
+}
+.linkItemNav:hover {
+  
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
 }

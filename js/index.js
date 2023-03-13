@@ -27,3 +27,5 @@ window.onclick = function (e) {
   }, 600);
 }
 }
+
+window.screenX
