@@ -204,7 +204,7 @@ html, body {
 
 @media (min-width: 1440px){
 
-
+/* navBar */
 .menuNavbar {
   display: flex;
 }
@@ -227,4 +227,35 @@ html, body {
   cursor: pointer;
 }
 
+/* container  */
+
+/* .imgHome {
+  width: 70%;
+} */
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+    "img sec2"
+    "col1 sec2"
+    "sec3 sec3";
 }
+.section1 {
+  grid-area: col1;
+}
+.section2 {
+  grid-area: sec2;
+}
+.section3 {
+  flex-direction: row;
+  grid-area: sec3;
+}
+}
+
+/* grids  */
+
+    /* display: grid;
+    grid-template-columns: 1000px 400px;
+    grid-template-rows: 60% 40%; */

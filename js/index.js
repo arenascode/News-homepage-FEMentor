@@ -28,4 +28,10 @@ window.onclick = function (e) {
 }
 }
 
-window.screenX
+window.addEventListener('resize', function () {
+  let container = document.querySelector('container')
+  if (window.innerWidth >= 1440) {
+    
+  }
+})
+console.log(window.innerWidth);
