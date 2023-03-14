@@ -33,12 +33,15 @@ html, body {
 }
 
 .logoNavbar {
+  background-image: url('../assets/images/logo.svg');
+  background-position:inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 30px;
   margin: 15px 0px 8px 8px;
 }
-#logo {
-  width: 35px;
-  height: 25px;
-}
+
 #menuDesktop {
   display: none;
 }
@@ -78,6 +81,12 @@ html, body {
   justify-content: center;
   row-gap: 20px;
 }
+.linksNav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: -360px;
+}
 .linkItemNav {
   color: hsl(236, 13%, 42%);
   font-size: 15px;
@@ -115,7 +124,7 @@ html, body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: hsl(200, 1%, 48%);
+  color: hsl(236, 13%, 42%);
 }
 .section1 button {
   margin-top: 20px;
@@ -204,9 +213,24 @@ html, body {
 
 @media (min-width: 1440px){
 
+body {
+  margin: 40px;
+  }
 /* navBar */
+.navBar {
+  margin-bottom: 30px;
+}
 .menuNavbar {
   display: flex;
+  font-size: 20px;
+}
+.logoNavbar {
+  background-image: url('../assets/images/logo.svg');
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 60px;
 }
 .menuResponsive {
   display: none;
@@ -220,6 +244,8 @@ html, body {
 }
 .linkItemNav {
   color: hsl(236, 13%, 42%);
+  font-size: 18px;
+  font-weight: 400;
 }
 .linkItemNav:hover {
   
@@ -229,9 +255,6 @@ html, body {
 
 /* container  */
 
-/* .imgHome {
-  width: 70%;
-} */
 #container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -244,18 +267,48 @@ html, body {
 }
 .section1 {
   grid-area: col1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 40px;
+}
+.section1 h1 {
+  font-size: 58px;
+  font-weight: 800;
+  width: 45%;
+}
+.section1 p {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: left;
+  width: 440px;
+  padding-right: 10px;
+}
+.section1 button {
+  margin-left: 435px;
+  margin-top: -50px;
+  width: 220px;
 }
 .section2 {
   grid-area: sec2;
+  justify-content: space-around;
+}
+.section2 h2 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.subsect2-p {
+  row-gap: 10px;
 }
 .section3 {
   flex-direction: row;
   grid-area: sec3;
+  column-gap: 28px;
 }
 }
 
 /* grids  */
 
-    /* display: grid;
-    grid-template-columns: 1000px 400px;
-    grid-template-rows: 60% 40%; */
+    /* only left order each section in base to width of screen*/
