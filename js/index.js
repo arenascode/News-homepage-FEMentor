@@ -1,9 +1,7 @@
 const btnBurguer = document.getElementById('btnMenu')
 const modal = document.getElementById('myModal')
 const closeModal = document.getElementById('closeModalBton')
-console.log(btnBurguer);
-console.log(modal);
-console.log(closeModal);
+
 
 btnBurguer.onclick = function () {
   modal.style.display = "block"
@@ -27,11 +25,3 @@ window.onclick = function (e) {
   }, 600);
 }
 }
-
-window.addEventListener('resize', function () {
-  let container = document.querySelector('container')
-  if (window.innerWidth >= 1440) {
-    
-  }
-})
-console.log(window.innerWidth);
