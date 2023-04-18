@@ -114,6 +114,7 @@ html, body {
 .mobileImg {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .desktopImg {
   display: none;
@@ -294,6 +295,7 @@ body {
 .desktopImg {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .section1 {
   grid-area: col1;
