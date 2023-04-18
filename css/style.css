@@ -21,6 +21,7 @@ button {
 /* Base */
 html, body {
   font-family: 'Inter', sans-serif;
+  background-color: hsl(36, 100%, 99%);
 }
 
 /* NavBar */
@@ -104,12 +105,19 @@ html, body {
 .imgHome {
   margin: 5px 10px 20px 10px;
   /* overflow: hidden; */
-  background-image: url('/assets/images/image-web-3-mobile.jpg');
-  background-size: cover;
+  /* background-image: url('/assets/images/image-web-3-mobile.jpg');
+  background-size: cover; */
   width: auto;
   height: 332px;
 }
 
+.mobileImg {
+  display: block;
+  width: 100%;
+}
+.desktopImg {
+  display: none;
+}
 .section1 {
   margin: 5px 10px 20px 10px;
 }
@@ -264,6 +272,16 @@ body {
     "img sec2"
     "col1 sec2"
     "sec3 sec3";
+}
+#imgHome img {
+  width: 100%;
+}
+.mobileImg {
+  display: none;
+}
+.desktopImg {
+  display: block;
+  width: 100%;
 }
 .section1 {
   grid-area: col1;

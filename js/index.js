@@ -1,7 +1,8 @@
 const btnBurguer = document.getElementById('btnMenu')
 const modal = document.getElementById('myModal')
 const closeModal = document.getElementById('closeModalBton')
-
+const imgHome = document.getElementById('imgHome')
+console.log(imgHome);
 
 btnBurguer.onclick = function () {
   modal.style.display = "block"
@@ -25,3 +26,4 @@ window.onclick = function (e) {
   }, 600);
 }
 }
+
